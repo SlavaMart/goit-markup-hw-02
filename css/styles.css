@@ -19,20 +19,12 @@
     /*others*/
 }
 
-
-
 body {
     font-family: var(--main-font);
     font-size: 14px;
     line-height: 1.15;
     color: var(--main-txt-cl)
 }
-
-.hero-btn:hover,
-.hero-btn:focus {
-    background-color: var(--btn-bg-hover-cl);
-}
-
 
 /* reset styles */
 .link {
@@ -54,17 +46,8 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white-txt-cl);
     cursor: pointer;
-}
-
-.btn-mode-light {
-    color: #212121;
-}
-
-.btn-mode-dark {
-    color: var(--dark-bg-cl);
-    background-color: var(--ligh-bg-cl);
 }
 
 
@@ -124,7 +107,8 @@ body {
 
 /* Hero section */
 
-.hero {
+.hero,
+.footer {
     background-color: var(--dark-bg-cl);
 }
 
@@ -145,6 +129,11 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--btn-bg-hover-cl);
 }
 
 /* peculiarities*/
@@ -216,10 +205,6 @@ body {
 
 /* Footer*/
 
-.footer {
-    background-color: var(--dark-bg-cl);
-}
-
 .footer-logo-cl {
     color: var(--acceny-txt-cl);
 }
@@ -227,7 +212,6 @@ body {
 .footer-logo-cl {
     color: var(--white-txt-cl);
 }
-
 
 .footer-list {
     font-family: var(--main-font);
@@ -258,10 +242,29 @@ body {
 
 .filter-btn-current {
     background-color: var(--acceny-txt-cl);
-    color: #FFFFFF;
+    color: var(--white-txt-cl);
 }
 
 .filter-btn {
     cursor: pointer;
     border: none;
+    background: var(--ligh-bg-cl);
+    border-radius: 4px;
+}
+
+.example-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: var(--main-txt-cl);
+}
+
+.example-desc {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    /* identical to box height, or 188% */
+    letter-spacing: 0.03em;
+    color: var(--contct-txt-cl);
 }
